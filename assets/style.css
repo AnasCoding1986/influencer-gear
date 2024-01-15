@@ -28,6 +28,12 @@ body{
     background: #E02C6D;
     padding: 15px 30px;
     border: none;
+    transition: all .3s ease;
+}
+.btn:hover{
+    transform: scale(1.1);
+    color: #E02C6D;
+    background: #FFF;
 }
 .btn i{
     margin-left: 10px;
@@ -118,6 +124,7 @@ body{
 /* =============Popular collection css============= */
 .popular-collection{
     margin-top: 100px;
+    position: relative;
 }
 .popular-collection .popular-collection-title{
     color: #3A3A3A;
@@ -173,6 +180,20 @@ body{
     letter-spacing: 0.252px;
     text-align: start;
 }
+.popular-collection .popular-collection-btn{
+    color: rgba(224, 44, 109, 0.87);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+    right: 70px;
+    bottom: 0;
+    border: none;
+    transition: all .3s ease;
+}
+.popular-collection .popular-collection-btn:hover{
+    transform: scale(1.1);
+}
 
 
 
@@ -225,6 +246,12 @@ body{
     }
     .popular-collection .popular-collection-item{
         padding: 1rem;
+    }
+    .popular-collection .popular-collection-item:last-child{
+        margin-bottom: 15px;
+    }
+    .popular-collection .popular-collection-btn{
+        right: 20px;
     }
 }
 
