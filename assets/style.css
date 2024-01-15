@@ -195,6 +195,38 @@ body{
     transform: scale(1.1);
 }
 
+/* =============feature css============= */
+.feature{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    align-items: center;
+}
+.feature .feature-image{
+    padding: 5rem;
+    width: 40%;
+}
+.feature .feature-image img{
+    width: 100%;
+}
+.feature .feature-description{
+    width: 50%;
+    margin: 20px 0 15px 0;
+}
+.feature .feature-description .feature-title{
+    color: #0A0826;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 60px;
+}
+.feature .feature-description .feature-description{
+    color: #6C6C6C;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+}
 
 
 
@@ -252,6 +284,20 @@ body{
     }
     .popular-collection .popular-collection-btn{
         right: 20px;
+    }
+
+    /* .......feature....... */
+    .feature{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .feature .feature-image{
+        padding: 0;
+        width: 90%;
+    }
+    .feature .feature-description{
+        width: 90%;
+        margin-bottom: 30px;
     }
 }
 
